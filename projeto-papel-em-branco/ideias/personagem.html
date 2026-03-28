@@ -8,26 +8,30 @@
 </head>
 <body>
     <h1>Personagem</h1>
-    <button class="sorteio">Idade</button> <input type="text">
+    <button class="sorteio" onclick="sortearIndividual('idade')">Idade</button> <input type="text" id="idade" readonly>
     <br>
-    <button class="sorteio">Cor</button> <input type="text" readonly>
+    <button class="sorteio" onclick="sortearIndividual('cor')">Cor</button> <input type="text" id="cor" readonly>
     <br>
-    <button class="sorteio">Altura</button> <input type="text" readonly>
+    <button class="sorteio" onclick="sortearIndividual('altura')">Altura</button> <input type="text" id="altura" readonly>
     <br>
-    <button class="sorteio">Cabelo</button> <input type="text" readonly>
+    <button class="sorteio" onclick="sortearIndividual('cabelo')">Cabelo</button> <input type="text" id="cabelo" readonly>
     <br>
-    <button class="sorteio">Físico</button> <input type="text" readonly>
+    <button class="sorteio" onclick="sortearIndividual('fisico')">Físico</button> <input type="text" id="fisico" readonly>
     <br>
-    <button class="sorteio">Raça</button> <input type="text" readonly>
+    <button class="sorteio" onclick="sortearIndividual('raca')">Raça</button> <input type="text" id="raca" readonly>
     <br>
-    <button class="sorteio">Clásse</button> <input type="text" readonly>
+    <button class="sorteio" onclick="sortearIndividual('classe')">Clásse</button> <input type="text" id="classe" readonly>
     <br>
-    <button class="sorteio">Arma</button> <input type="text" readonly>
+    <button class="sorteio" onclick="sortearIndividual('arma')">Arma</button> <input type="text" id="arma" readonly>
     <br>
-    <button class="sorteio">Elemento</button> <input type="text" readonly>
+    <button class="sorteio" onclick="sortearIndividual('elemento')">Elemento</button> <input type="text" id="elemento" readonly>
     <br>
-    <button class="sorteio">Tema</button> <input type="text" readonly>
+    <button class="sorteio" onclick="sortearIndividual('tema')">Tema</button> <input type="text" id="tema" readonly>
     <br>
-    <a href="/Projeto Papel em Branco/index.html"><button class="back">←Voltar</button></a>
+    <button class="sorteio" onclick="sortearTudo()" style="margin-top: 20px; background-color: #28a745; color: white;">Sortear Tudo</button>
+    <br>
+    <a href="../index.html"><button class="back">←Voltar</button></a>
+
+    <script src="../dados/dados_personagem.js"></script>
 </body>
 </html>
