@@ -1,0 +1,68 @@
+body {
+    background-color: rgb(35, 35, 43);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+button.sorteio {
+    margin: 10px;
+    color: rgb(0, 0, 0);
+    border: 2px solid;
+    outline: none;
+    border-color: #000000;
+    background-color: rgb(255, 211, 67);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 900;
+    transition: all ease 0.1s;
+    box-shadow: 0px 5px 0px 0px #d47800;
+}
+
+button.sorteio:hover {
+    background-color: rgb(255, 237, 179);
+    box-shadow: 0px 5px 0px 0px #000000
+}
+
+button.sorteio:active{
+    transform: translateY(5px);
+    box-shadow: 0px 0px 0px 0px #fff;
+}
+
+input {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    height: 35px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    background-color: #cfcfcf;
+    text-align: center;
+}
+
+button.back {
+    margin: 10px;
+    color: rgb(0, 0, 0);
+    border: 2px solid;
+    outline: none;
+    border-color: #000000;
+    background-color: rgb(255, 121, 44);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 900;
+    transition: all ease 0.1s;
+    box-shadow: 0px 5px 0px 0px #8f4603;
+}
+
+button.back:hover {
+    transform: translateY(-5px);
+    background-color: rgb(255, 69, 44);
+    box-shadow: 0px 10px 0px 0px #640e03;
+}
+
+button.back:active {
+    transform: translateY(5px);
+    box-shadow: 0px 0px 0px 0px #b65858;
+}
