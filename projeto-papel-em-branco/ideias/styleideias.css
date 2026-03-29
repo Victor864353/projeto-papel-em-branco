@@ -45,11 +45,11 @@ label.checkbox {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 30px;  /* Ajuste conforme o tamanho da imagem */
+    width: 30px; 
     height: 30px;
     vertical-align: middle;
-    background-color: #888888; /* Cor de fundo desativado */
-    border-radius: 50%;        /* Faz o fundo ficar circular */
+    background-color: #888888; 
+    border-radius: 50%;        
     cursor: pointer;
 }
 
