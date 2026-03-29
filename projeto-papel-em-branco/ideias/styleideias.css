@@ -41,6 +41,44 @@ input {
     text-align: center;
 }
 
+label.checkbox {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;  /* Ajuste conforme o tamanho da imagem */
+    height: 30px;
+    vertical-align: middle;
+    background-color: #888888; /* Cor de fundo desativado */
+    border-radius: 50%;        /* Faz o fundo ficar circular */
+    cursor: pointer;
+}
+
+label.checkbox:has(input:checked) {
+    background-color: #c4a26f;
+}
+
+label.checkbox input{
+    display: none;
+}
+
+label.checkbox .fechado {
+    display: none;
+    cursor: pointer;
+}
+
+label.checkbox .aberto {
+    display: inline;
+    cursor: pointer;
+}
+
+label.checkbox input:checked ~ .aberto {
+    display: none;
+}
+
+label.checkbox input:checked ~ .fechado {
+    display: inline;
+}
+
 button.back {
     margin: 10px;
     color: rgb(0, 0, 0);
