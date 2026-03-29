@@ -19,7 +19,7 @@ function sortearIndividual(categoria) {
     // 2° - Bloqueador: Se a trava estiver acionada, não faz nada
     if (trava && trava.checked) return;
 
-    const lista = dados_personagem[categoria];
+    const lista = dados_personagem[categoria]; // So vai alterar o "dados_personagem" quando for reutilizar
     if (lista && input) {
         let novoItem;
         // 1° - Sorteia novamente até que o item seja diferente do atual
