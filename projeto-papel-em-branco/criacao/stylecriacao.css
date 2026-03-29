@@ -1,0 +1,120 @@
+body {
+    background-color: rgb(35, 35, 43);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    display: inline;
+    background-color: rgb(253, 178, 15);
+    color: black;
+    padding-bottom: 4px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+input {
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+input.nome {
+    margin-left: 10px;
+    margin-right: 20px;
+    height: 24px;
+    width: 500px;
+}
+
+input.idade {
+    margin-left: 10px;
+    height: 24px;
+    width: 150px;
+    text-align: center;
+}
+
+textarea {
+    margin-left: 10px;
+    height: 100px;
+    width: 750px;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    resize: none;
+}
+
+.save {
+    display: flex;
+    justify-content: center;
+}
+
+button.saveprint {
+    margin: 10px;
+    color: rgb(0, 0, 0);
+    border: 2px solid;
+    outline: none;
+    border-color: #000000;
+    background-color: rgb(30, 190, 30);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 900;
+    transition: all ease 0.1s;
+    box-shadow: 0px 5px 0px 0px #046d33;
+}
+
+button.saveprint:hover {
+    transform: translateY(-5px);
+    background-color: rgb(13, 224, 101);
+    box-shadow: 0px 10px 0px 0px #036454;
+}
+
+button.saveprint:active {
+    transform: translateY(5px);
+    box-shadow: 0px 0px 0px 0px #ffffff;
+}
+
+.back {
+    display: flex;
+    justify-content: center;
+}
+
+button.buttonback {
+    margin: 10px;
+    color: rgb(0, 0, 0);
+    border: 2px solid;
+    outline: none;
+    border-color: #000000;
+    background-color: rgb(255, 121, 44);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 900;
+    transition: all ease 0.1s;
+    box-shadow: 0px 5px 0px 0px #8f4603;
+}
+
+button.buttonback:hover {
+    transform: translateY(-5px);
+    background-color: rgb(255, 69, 44);
+    box-shadow: 0px 10px 0px 0px #640e03;
+}
+
+button.buttonback:active {
+    transform: translateY(5px);
+    box-shadow: 0px 0px 0px 0px #b65858;
+}

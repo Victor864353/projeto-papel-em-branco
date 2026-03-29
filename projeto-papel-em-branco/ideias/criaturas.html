@@ -3,10 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ideias para Criatura</title>
+    <title>Ideias para Criaturas</title>
     <link rel="stylesheet" href="styleideias.css">
 </head>
 <body>
+    <h1>Criaturas</h1>
+    <button class="sorteio" onclick="sortearIndividual('aparencia')">Aparência</button> <input type="text" id="aparencia" readonly>
+    <br>
+    <button class="sorteio" onclick="sortearIndividual('forma')">Forma</button> <input type="text" id="forma" readonly>
+    <br>
+    <button class="sorteio" onclick="sortearIndividual('elemento')">Elemento</button> <input type="text" id="elemento" readonly>
+    <br>
+    <button class="sorteio" onclick="sortearIndividual('habitat')">Habitat</button> <input type="text" id="habitat" readonly>
+    <br>
+    <button class="sorteio" onclick="sortearIndividual('origem')">Origem</button> <input type="text" id="origem" readonly>
+    <br>
+    <button class="sorteio" onclick="sortearIndividual('movimentacao')">Movimentação</button> <input type="text" id="movimentacao" readonly>
+    <br>
+    <button class="sorteio" onclick="sortearIndividual('tamanho')">Tamanho</button> <input type="text" id="tamanho" readonly>
+    <br>
+    <button class="sorteio" onclick="sortearIndividual('alimentacao')">Alimentação</button> <input type="text" id="alimentacao" readonly>
+    <br>
+    <button class="sorteio" onclick="sortearIndividual('uso')">Uso</button> <input type="text" id="uso" readonly>
+    <br>
     
+    <button class="all" onclick="sortearTudo()">Sortear Tudo</button>
+    <br>
+    <a href="../incio.html"><button class="back">←Voltar</button></a>
+    
+    <script src="../dados/dados_criatura.js"></script>
 </body>
 </html>

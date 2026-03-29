@@ -1,14 +1,15 @@
 const dados_personagem = {
-    idade: ["Criança", "Adolescente", "Jovem Adulto", "Adulto", "Meia-idade", "Idoso", "Ancião", "Imortal"],
-    cor: ["Vermelho", "Azul", "Verde", "Amarelo", "Roxo", "Ciano", "Magenta", "Preto", "Branco", "Dourado", "Prateado"],
-    altura: ["Muito Baixo", "Baixo", "Estatura Média", "Alto", "Muito Alto", "Gigantesco"],
-    cabelo: ["Curto e Liso", "Longo e Ondulado", "Cacheado", "Careca", "Moicano", "Tranças", "Colorido", "Bagunçado"],
-    fisico: ["Esguio", "Atlético", "Musculoso", "Robusto", "Frágil", "Gordo", "Definido"],
-    raca: ["Humano", "Elfo", "Anão", "Orc", "Gnomo", "Tiefling", "Draconato", "Meio-Orc", "Morto-Vivo"],
+    idade: ["Adolescente (14-18)", "Jovem (19-30)", "Adulto (30-50)", "Idoso (60-80)", "Ancião (80-100)", "Imortal"],
+    cor: ["Palido/Albino", "Branco", "Pardo", "Negro", "Bronzeado", "Colorido(escolha)", "Vitiligo", "Melanismo"],
+    altura: ["gnomo", "Baixo", "Estatura Média", "Alto", "Muito Alto", "Gigantesco"],
+    cabelotipo: ["Curto e liso", "Longo e liso", "Curto e ondulado", "Longo e ondulado", "Cacheado", "Careca ou raspado", "Crespo"],
+    cabelocorte: ["Corte Punk", "Trançado", "Bagunçado", "Ponpons", "Genérico", "Rabo de Cavalo"],
+    fisico: ["Magro", "Atlético", "Musculoso", "Gordo"],
+    raca: ["Humano", "Elfo", "Anão", "Orc", "Gnomo", "Tiefling", "Draconato", "Morto-Vivo", "Antropomorfo", "demi-humanos"],
     classe: ["Guerreiro", "Mago", "Ladino", "Paladino", "Bardo", "Druida", "Clérigo", "Ranger", "Monge", "Bruxo"],
-    arma: ["Espada Longa", "Arco e Flecha", "Cajado Mágico", "Adagas Duplas", "Machado de Batalha", "Lança", "Martelo", "Bestas"],
-    elemento: ["Fogo", "Água", "Terra", "Ar", "Luz", "Trevas", "Raio", "Gelo", "Natureza", "Vácuo"],
-    tema: ["Fantasia Medieval", "Cyberpunk", "Steampunk", "Fantasia Sombria", "Sci-Fi Espacial", "Pirata", "Pós-Apocalíptico", "Urbano"]
+    arma: ["Espada longa", "Espada curta", "Arco e Flecha", "Cajado mágico", "Adagas duplas", "Machado de Batalha", "Lança", "Martelo", "Bestas", "Pistola", "Rifle", "Submetralhadora", "Metralhadora", "Escopeta", "Armas de arremesso"],
+    elemento: ["Fogo", "Água", "Terra", "Ar", "Luz", "Trevas", "Raio/Enegia", "Gelo", "Natureza", "Cristal"],
+    tema: ["Fantasia Medieval", "Cyberpunk", "Steampunk", "Dark Fantasy", "Sci-Fi Espacial", "Pirata", "Pós-Apocalíptico", "Solarpunk"]
 };
 
 function sortearIndividual(categoria) {

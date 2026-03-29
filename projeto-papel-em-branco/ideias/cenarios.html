@@ -7,6 +7,24 @@
     <link rel="stylesheet" href="styleideias.css">
 </head>
 <body>
+    <h1>Cenário</h1>
+    <button class="sorteio" onclick="sortearIndividual('local')">Local</button> <input type="text" id="local" readonly>
+    <br>
+    <button class="sorteio" onclick="sortearIndividual('clima')">Clima</button> <input type="text" id="clima" readonly>
+    <br>
+    <button class="sorteio" onclick="sortearIndividual('horario')">Horário</button> <input type="text" id="horario" readonly>
+    <br>
+    <button class="sorteio" onclick="sortearIndividual('visao')">Visão</button> <input type="text" id="visao" readonly>
+    <br>
+    <button class="sorteio" onclick="sortearIndividual('vegetacao')">Vegetação</button> <input type="text" id="vegetacao" readonly>
+    <br>
+    <button class="sorteio" onclick="sortearIndividual('epoca')">Época</button> <input type="text" id="epoca" readonly>
+    <br>
     
+    <button class="all" onclick="sortearTudo()">Sortear Tudo</button>
+    <br>
+    <a href="../incio.html"><button class="back">←Voltar</button></a>
+
+    <script src="../dados/dados_cenario.js"></script>
 </body>
 </html>

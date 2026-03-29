@@ -66,3 +66,29 @@ button.back:active {
     transform: translateY(5px);
     box-shadow: 0px 0px 0px 0px #b65858;
 }
+
+button.all {
+    margin: 10px;
+    color: rgb(0, 0, 0);
+    border: 2px solid;
+    outline: none;
+    border-color: #000000;
+    background-color: rgb(32, 168, 209);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 900;
+    transition: all ease 0.1s;
+    box-shadow: 0px 5px 0px 0px #024369;
+}
+
+button.all:hover {
+    transform: translateY(-5px);
+    background-color: rgb(81, 181, 221);
+    box-shadow: 0px 10px 0px 0px #1159c5;
+}
+
+button.all:active {
+    transform: translateY(5px);
+    box-shadow: 0px 0px 0px 0px #ffffff;
+}
