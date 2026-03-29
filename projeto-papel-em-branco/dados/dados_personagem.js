@@ -13,13 +13,21 @@ const dados_personagem = {
 };
 
 function sortearIndividual(categoria) {
-    const lista = dados_personagem[categoria]; // So vai alterar o "dados_personagem" quando for reutilizar
-    if (lista) {
-        const itemAleatorio = lista[Math.floor(Math.random() * lista.length)];
-        const input = document.getElementById(categoria);
-        if (input) {
-            input.value = itemAleatorio;
-        }
+    const input = document.getElementById(categoria);
+    const trava = document.getElementById(`trava-${categoria}`);
+
+    // 2° - Bloqueador: Se a trava estiver acionada, não faz nada
+    if (trava && trava.checked) return;
+
+    const lista = dados_personagem[categoria];
+    if (lista && input) {
+        let novoItem;
+        // 1° - Sorteia novamente até que o item seja diferente do atual
+        do {
+            novoItem = lista[Math.floor(Math.random() * lista.length)];
+        } while (lista.length > 1 && novoItem === input.value);
+
+        input.value = novoItem;
     }
 }
 
