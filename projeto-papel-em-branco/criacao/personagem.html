@@ -5,56 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criação de Personagem</title>
     <link rel="stylesheet" href="stylecriacao.css">
+    <!-- Bibliotecas para exportação -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 <body>
-    <h1>Personagem</h1>
-    <div class="info">
-        <p>Nome:</p><input type="text" class="nome">
-        <p>Idade:</p><input type="text" class="idade">
-    </div>
+    <div id="conteudo-para-salvar">
+        <h1>Personagem</h1>
+        <div class="info">
+            <p>Nome:</p><input type="text" id="nome" class="nome">
+            <p>Idade:</p><input type="number" id="idade" class="idade">
+        </div>
 
-    <div class="info">
-        <p>Raça:</p><input type="text" class="raca">
-        <p>Classe:</p><input type="text" class="classe">
-    </div>
+        <div class="info">
+            <p>Raça:</p><input type="text" id="raca" class="raca">
+            <p>Classe:</p><input type="text" id="classe" class="classe">
+        </div>
 
-    <div class="info">
-        <p>Classe social:</p>
-        <select class="social">
-            <option>Indiferente</option>
-            <option>Muito pobre</option>
-            <option>Pobre</option>
-            <option>Classe média</option>
-            <option>Rico</option>
-            <option>Muito rico</option>
-        </select>
-    </div>
-    <br>
-    <div class="info">
-        <p>História:</p> <textarea class="historia" rows="4" cols="50" wrap="hard" placeholder="Escreva uma breve história sobre o seu personagem (origem, família, época, motivações)"></textarea>
-    </div>
-    <br>
-    <div class="info">
-        <p>Armas e <br> Equipamentos:</p> <textarea class="armas" rows="4" cols="50" wrap="hard" placeholder="Quais armas e equipamentos seu personagem usa?"></textarea>
-    </div>
-    <br>
-    <div class="info">
-        <p>Aparência e <br> Personalidade</p> <textarea class="aparencia" rows="4" cols="50" wrap="hard" placeholder="Descreva as principais características do seu personagem: Rosto, físico, roupas, altura, temperamento, gostos, etc"></textarea>
-    </div>
-    <br>
-    <div class="info">
-        <p>Atributos e <br> Habilidades</p> <textarea class="habilidades" rows="4" cols="50" wrap="hard" placeholder="Quais poderes, conhecimentos e habilidaes o seu personagem possui?"></textarea>
+        <div class="info">
+            <p>Classe social:</p>
+            <select id="social" class="social">
+                <option>Indiferente</option>
+                <option>Muito pobre</option>
+                <option>Pobre</option>
+                <option>Classe média</option>
+                <option>Rico</option>
+                <option>Muito rico</option>
+            </select>
+        </div>
+        <br>
+        <div class="info">
+            <p>História:</p> <textarea id="historia" class="historia" rows="4" cols="50" wrap="hard" placeholder="Escreva uma breve história sobre o seu personagem (origem, família, época, motivações)"></textarea>
+        </div>
+        <br>
+        <div class="info">
+            <p>Armas e <br> Equipamentos:</p> <textarea id="armas" class="armas" rows="4" cols="50" wrap="hard" placeholder="Quais armas e equipamentos seu personagem usa?"></textarea>
+        </div>
+        <br>
+        <div class="info">
+            <p>Aparência e <br> Personalidade</p> <textarea id="aparencia" class="aparencia" rows="4" cols="50" wrap="hard" placeholder="Descreva as principais características do seu personagem: Rosto, físico, roupas, altura, temperamento, gostos, etc"></textarea>
+        </div>
+        <br>
+        <div class="info">
+            <p>Atributos e <br> Habilidades</p> <textarea id="habilidades" class="habilidades" rows="4" cols="50" wrap="hard" placeholder="Quais poderes, conhecimentos e habilidaes o seu personagem possui?"></textarea>
+        </div>
     </div>
 
     <div class="save">
-        <button class="saveprint">Salvar JPEG</button>
-        <button class="saveprint">Salvar PDF</button>
-        <button class="saveprint">Salvar .txt</button>
+        <button id="btn-jpeg" class="saveprint">Salvar JPEG</button>
+        <button id="btn-pdf" class="saveprint">Salvar PDF</button>
+        <button id="btn-txt" class="saveprint">Salvar .txt</button>
     </div>
 
     <div class="back">
         <a href="../incio.html"><button class="buttonback">←Voltar</button></a>
     </div>
 
+    <script src="salvamento.js"></script>
 </body>
 </html>
