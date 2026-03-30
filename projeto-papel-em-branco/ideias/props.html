@@ -9,10 +9,25 @@
 <body>
     <h1>Props</h1>
     <button class="sorteio" onclick="sortearIndividual('tipo')">Tipo</button> <input type="text" id="tipo" readonly>
+    <label class="checkbox">
+        <input type="checkbox" id="trava-tipo" title="Travar">
+        <img src="cadeadoaberto.png" width="20px" class="aberto">
+        <img src="cadeadofechado.png" width="20px" class="fechado"> 
+    </label>
     <br>
     <button class="sorteio" onclick="sortearIndividual('elemento')">Elemento</button> <input type="text" id="elemento" readonly>
+    <label class="checkbox">
+        <input type="checkbox" id="trava-elemento" title="Travar">
+        <img src="cadeadoaberto.png" width="20px" class="aberto">
+        <img src="cadeadofechado.png" width="20px" class="fechado"> 
+    </label>
     <br>
     <button class="sorteio" onclick="sortearIndividual('tema')">Tema</button> <input type="text" id="tema" readonly>
+    <label class="checkbox">
+        <input type="checkbox" id="trava-tema" title="Travar">
+        <img src="cadeadoaberto.png" width="20px" class="aberto">
+        <img src="cadeadofechado.png" width="20px" class="fechado"> 
+    </label>
     <br>
 
     <button class="all" onclick="sortearTudo()">Sortear Tudo</button>
