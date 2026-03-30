@@ -24,6 +24,7 @@ p {
     border-radius: 5px;
     font-size: 18px;
     font-weight: 900;
+    text-align: center;
 }
 
 input {
@@ -37,7 +38,7 @@ input.nome {
     margin-left: 10px;
     margin-right: 20px;
     height: 24px;
-    width: 500px;
+    width: 515px;
 }
 
 input.idade {
@@ -47,7 +48,30 @@ input.idade {
     text-align: center;
 }
 
-textarea {
+input.raca {
+    margin-left: 10px;
+    margin-right: 20px;
+    height: 24px;
+    width: 250px;
+}
+
+input.classe {
+    margin-left: 10px;
+    margin-right: 20px;
+    height: 24px;
+    width: 250px;
+}
+
+select.social {
+    margin-left: 10px;
+    height: 30px;
+    width: 250px;
+    border-radius: 5px;
+    font-size: 15px;
+    outline: none;
+}
+
+textarea.historia {
     margin-left: 10px;
     height: 100px;
     width: 750px;
@@ -56,6 +80,38 @@ textarea {
     border-radius: 10px;
     resize: none;
 }
+
+textarea.armas {
+    margin-left: 10px;
+    height: 70px;
+    width: 688px;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    resize: none;
+}
+
+textarea.aparencia {
+    margin-left: 10px;
+    height: 90px;
+    width: 695px;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    resize: none;
+}
+
+textarea.habilidades {
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 90px;
+    width: 722px;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    resize: none;
+}
+
 
 .save {
     display: flex;
