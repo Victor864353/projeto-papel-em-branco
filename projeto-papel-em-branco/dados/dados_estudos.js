@@ -7,13 +7,20 @@ const dados_estudos = {
 };
 
 function sortearIndividual(categoria) {
-    const lista = dados_estudos[categoria]; // So vai alterar o "dados_personagem" quando for reutilizar
-    if (lista) {
-        const itemAleatorio = lista[Math.floor(Math.random() * lista.length)];
-        const input = document.getElementById(categoria);
-        if (input) {
-            input.value = itemAleatorio;
-        }
+    const input = document.getElementById(categoria);
+    const trava = document.getElementById(`trava-${categoria}`);
+
+    if (trava && trava.checked) return;
+
+    const lista = dados_estudos[categoria]; 
+    if (lista && input) {
+        let novoItem;
+
+        do {
+            novoItem = lista[Math.floor(Math.random() * lista.length)];
+        } while (lista.length > 1 && novoItem === input.value);
+
+        input.value = novoItem;
     }
 }
 
