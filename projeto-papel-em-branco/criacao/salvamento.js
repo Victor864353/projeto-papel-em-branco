@@ -48,21 +48,52 @@ async function salvarJPEG() {
 
 async function salvarPDF() {
     const { jsPDF } = window.jspdf;
-    const container = document.getElementById('conteudo-para-salvar');
+    const d = obterDados();
+    const pdf = new jsPDF();
     
-   
-    const canvas = await html2canvas(container, {
-        backgroundColor: '#1a1a1a',
-        scale: 2
+    const margem = 15;
+    const larguraUtil = pdf.internal.pageSize.getWidth() - (margem * 2);
+    let y = 20;
+
+    // Configuração de conteúdo formatado
+    const secoes = [
+        { texto: "FICHA DE PERSONAGEM", estilo: "bold", tamanho: 18 },
+        { texto: "", estilo: "normal", tamanho: 12 }, // Espaçador
+        { texto: `Nome: ${d.nome}`, estilo: "normal", tamanho: 12 },
+        { texto: `Idade: ${d.idade}`, estilo: "normal", tamanho: 12 },
+        { texto: `Raça: ${d.raca}`, estilo: "normal", tamanho: 12 },
+        { texto: `Classe: ${d.classe}`, estilo: "normal", tamanho: 12 },
+        { texto: `Classe Social: ${d.social}`, estilo: "normal", tamanho: 12 },
+        { texto: "", estilo: "normal", tamanho: 12 },
+        { texto: "HISTÓRIA:", estilo: "bold", tamanho: 12 },
+        { texto: d.historia, estilo: "normal", tamanho: 11 },
+        { texto: "", estilo: "normal", tamanho: 12 },
+        { texto: "ARMAS E EQUIPAMENTOS:", estilo: "bold", tamanho: 12 },
+        { texto: d.armas, estilo: "normal", tamanho: 11 },
+        { texto: "", estilo: "normal", tamanho: 12 },
+        { texto: "APARÊNCIA E PERSONALIDADE:", estilo: "bold", tamanho: 12 },
+        { texto: d.aparencia, estilo: "normal", tamanho: 11 },
+        { texto: "", estilo: "normal", tamanho: 12 },
+        { texto: "ATRIBUTOS E HABILIDADES:", estilo: "bold", tamanho: 12 },
+        { texto: d.habilidades, estilo: "normal", tamanho: 11 }
+    ];
+
+    secoes.forEach(secao => {
+        pdf.setFont("helvetica", secao.estilo);
+        pdf.setFontSize(secao.tamanho);
+        
+        // splitTextToSize divide o texto automaticamente se ele for maior que a largura da página
+        const linhas = pdf.splitTextToSize(secao.texto || "", larguraUtil);
+        
+        // Verifica se precisa de uma nova página antes de escrever
+        if (y + (linhas.length * 7) > 280) {
+            pdf.addPage();
+            y = 20;
+        }
+
+        pdf.text(linhas, margem, y);
+        y += (linhas.length * 7) + 2; // Incrementa a posição Y para a próxima seção
     });
-    
-    const imgData = canvas.toDataURL('image/png');
-    const pdf = new jsPDF('p', 'mm', 'a4');
-    
-    const imgProps = pdf.getImageProperties(imgData);
-    const pdfWidth = pdf.internal.pageSize.getWidth();
-    const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
-    
-    pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
-    pdf.save(`${document.getElementById('nome').value || 'personagem'}.pdf`);
+
+    pdf.save(`${d.nome || 'personagem'}.pdf`);
 }
