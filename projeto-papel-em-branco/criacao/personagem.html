@@ -16,12 +16,10 @@
             <p>Nome:</p><input type="text" id="nome" class="nome">
             <p>Idade:</p><input type="number" id="idade" class="idade">
         </div>
-
         <div class="info">
-            <p>Raça:</p><input type="text" id="raca" class="raca">
-            <p>Classe:</p><input type="text" id="classe" class="classe">
+            <p>Raça:</p><input type="text" id="raca" class="raca" placeholder="Ex: Elfo">
+            <p>Classe:</p><input type="text" id="classe" class="classe" placeholder="Ex: Ranger">
         </div>
-
         <div class="info">
             <p>Classe social:</p>
             <select id="social" class="social">
@@ -32,35 +30,31 @@
                 <option>Rico</option>
                 <option>Muito rico</option>
             </select>
+            <p class="trabalho">Trabalho:</p><input type="text" id="trabalho" class="trabalho" placeholder="Ex: Guarda-Costas">
         </div>
         <br>
-        <div class="info">
-            <p>História:</p> <textarea id="historia" class="historia" rows="4" cols="50" wrap="hard" placeholder="Escreva uma breve história sobre o seu personagem (origem, família, época, motivações)"></textarea>
+        <div class="info2">
+            <p>História:</p> <textarea id="historia" class="historia" rows="4" wrap="hard" placeholder="Escreva uma breve história sobre o seu personagem (origem, família, época, motivações, traumas)"></textarea>
         </div>
-        <br>
-        <div class="info">
-            <p>Armas e <br> Equipamentos:</p> <textarea id="armas" class="armas" rows="4" cols="50" wrap="hard" placeholder="Quais armas e equipamentos seu personagem usa?"></textarea>
+        <div class="info2">
+            <p>Armas e <br> Equipamentos:</p> <textarea id="armas" class="armas" rows="4" wrap="hard" placeholder="Quais armas e equipamentos seu personagem usa?"></textarea>
         </div>
-        <br>
-        <div class="info">
-            <p>Aparência e <br> Personalidade</p> <textarea id="aparencia" class="aparencia" rows="4" cols="50" wrap="hard" placeholder="Descreva as principais características do seu personagem: Rosto, físico, roupas, altura, temperamento, gostos, etc"></textarea>
+        <div class="info2">
+            <p>Aparência e <br> Personalidade</p> <textarea id="aparencia" class="aparencia" rows="4" wrap="hard" placeholder="Descreva as principais características do seu personagem: Rosto, físico, roupas, altura, temperamento, gostos, etc"></textarea>
         </div>
-        <br>
-        <div class="info">
-            <p>Atributos e <br> Habilidades</p> <textarea id="habilidades" class="habilidades" rows="4" cols="50" wrap="hard" placeholder="Quais poderes, conhecimentos e habilidaes o seu personagem possui?"></textarea>
+        <div class="info3">
+            <p>Atributos e <br> Habilidades</p> <textarea id="habilidades" class="habilidades" rows="4" wrap="hard" placeholder="Quais poderes, conhecimentos e habilidaes o seu personagem possui?"></textarea>
         </div>
     </div>
-
+    <br>
     <div class="save">
         <button id="btn-jpeg" class="saveprint">Salvar JPEG</button>
         <button id="btn-pdf" class="saveprint">Salvar PDF</button>
         <button id="btn-txt" class="saveprint">Salvar .txt</button>
     </div>
-
     <div class="back">
         <a href="../incio.html"><button class="buttonback">←Voltar</button></a>
     </div>
-
-    <script src="salvamento.js"></script>
+    <script src="salvamento/salvamento-personagem.js"></script>
 </body>
 </html>

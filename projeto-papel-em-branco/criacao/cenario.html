@@ -5,12 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criação de Cenários</title>
     <link rel="stylesheet" href="stylecriacao.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 <body>
-    <h1>Cenários</h1>
-
+    <div id="conteudo-para-salvar">
+        <h1>Cenários</h1>
+        <div class="info">
+            <p>Local:</p><input type="text" id="local" class="local" placeholder="Ex: Picos gelados do sul (fictício ou real)">
+            <p>Horário:</p>
+            <select id="horario" class="horario">
+                <option>Indefinido</option>
+                <option>Dia</option>
+                <option>Tarde</option>
+                <option>Noite</option>
+                <option>Pôr do sol</option>
+                <option>Nascer do sol</option>
+            </select>
+        </div>
+        <div class="info">
+            <p>Região:</p>
+            <select id="regiao" class="regiao">
+                <option>Desconhecida</option>
+                <option>Inabitada</option>
+                <option>Rural</option>
+                <option>Urbana</option>
+                <option>Isolada</option>
+                <option>Perigosa</option>
+            </select>
+            <p>Civilização:</p>
+            <select id="civilizacao" class="civilizacao">
+                <option>Inexistente</option>
+                <option>Primitiva</option>
+                <option>Contemporânea</option>
+                <option>Avançada</option>
+                <option>Selvagem/Perigosa</option>
+            </select>
+        </div>
+        <div class="info">
+            <p class="bioma">Bioma:</p>
+        </div>
+        <div class="bioma">
+            <p>Clima:</p><input id="clima" class="clima"  rows="1" wrap="hard" placeholder="Ex: Frio extremo com muita neve"></input>
+        </div>
+        <div class="bioma">
+            <p>Vegetação:</p><input id="vegetacao" class="vegetacao" rows="1" cols="50" wrap="hard" placeholder="Ex: Pouca vegetação e algumas árvores"></input>
+        </div>
+        <div class="bioma">
+            <p>Fauna:</p><input id="fauna" class="fauna" rows="1" cols="50" wrap="hard" placeholder="Ex: Muitos animais de pequeno porte e alguns predadores"></input>
+        </div>
+        <div class="bioma">
+            <p>Terreno:</p><input id="terreno" class="terreno" rows="1" cols="50" wrap="hard" placeholder="Ex: Montanhoso e irregular"></input>
+        </div>
+        <br>
+        <div class="info2">
+            <p>História ou <br> Composição:</p><textarea id="composicao" class="composicao" rows="4" wrap="hard" placeholder="(Opicional) A história de um lugar ajuda a entender como surgiu, sua função, sua aparência e sua civilização. 
+Você também pode usar esse campo para descrever a composição do ambiente."></textarea>
+        </div>
+        <div class="info3">
+            <p>Estruturas:</p><textarea id="estruturas" class="estruturas" rows="4" wrap="hard" placeholder="Se necessário, use esse campo para descrever e dar atenção as estruturas da cena.
+Estrututas podem ser geradas por:
+Humanos: acampamentos, casas, reinos, ...
+Animais/Criaturas: ninhos, tocas, covas, colmeias, ...
+Natureza: cavernas, pisinas naturais, fontes termais, arcos de pedras, ..."></textarea>
+        </div>
+    </div>
+    <br>
+    <div class="save">
+        <button id="btn-jpeg" class="saveprint">Salvar JPEG</button>
+        <button id="btn-pdf" class="saveprint">Salvar PDF</button>
+        <button id="btn-txt" class="saveprint">Salvar .txt</button>
+    </div>
     <div class="back">
         <a href="../incio.html"><button class="buttonback">←Voltar</button></a>
     </div>
+    <script src="salvamento/salvamento-cenario.js"></script>
 </body>
 </html>

@@ -8,24 +8,49 @@ h1 {
     text-align: center;
 }
 
-.info {
+div.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -25px;
+}
+
+div.info2 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+div.info3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6px;
+}
+
+div.bioma {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -24px;
+}
+
 p {
     display: inline;
+    text-align: center;
     background-color: rgb(253, 178, 15);
     color: black;
-    padding-bottom: 4px;
     padding-left: 5px;
     padding-right: 5px;
     border-radius: 5px;
     font-size: 18px;
     font-weight: 900;
-    text-align: center;
 }
+
+p.bioma {
+    margin-top: 40px;
+}
+
 
 input {
     border-radius: 5px;
@@ -34,16 +59,30 @@ input {
     font-size: 15px;
 }
 
+select {
+    border-radius: 5px;
+    font-size: 15px;
+    outline: none;
+}
+
+textarea {
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    resize: none;
+}
+
+/* #region INPUTS PERSONAGEM //////////////////////////////////////////////////////////////////////////////////////////// */
 input.nome {
     margin-left: 10px;
     margin-right: 20px;
-    height: 24px;
+    height: 25px;
     width: 515px;
 }
 
 input.idade {
     margin-left: 10px;
-    height: 24px;
+    height: 25px;
     width: 150px;
     text-align: center;
 }
@@ -51,69 +90,120 @@ input.idade {
 input.raca {
     margin-left: 10px;
     margin-right: 20px;
-    height: 24px;
+    height: 25px;
     width: 250px;
 }
 
 input.classe {
     margin-left: 10px;
-    margin-right: 20px;
-    height: 24px;
+    height: 25px;
+    width: 250px;
+}
+
+input.trabalho {
+    margin-left: 10px;
+    height: 25px;
     width: 250px;
 }
 
 select.social {
     margin-left: 10px;
+    margin-right: 20px;
     height: 30px;
-    width: 250px;
-    border-radius: 5px;
-    font-size: 15px;
-    outline: none;
+    width: 200px;
 }
 
 textarea.historia {
     margin-left: 10px;
     height: 100px;
     width: 750px;
-    outline: none;
-    font-size: 15px;
-    border-radius: 10px;
-    resize: none;
 }
 
 textarea.armas {
     margin-left: 10px;
     height: 70px;
     width: 688px;
-    outline: none;
-    font-size: 15px;
-    border-radius: 10px;
-    resize: none;
 }
 
 textarea.aparencia {
     margin-left: 10px;
     height: 90px;
     width: 695px;
-    outline: none;
-    font-size: 15px;
-    border-radius: 10px;
-    resize: none;
 }
 
 textarea.habilidades {
-    margin-top: 10px;
     margin-left: 10px;
     height: 90px;
     width: 722px;
-    outline: none;
-    font-size: 15px;
-    border-radius: 10px;
-    resize: none;
+}
+/* #endregion */
+
+/* #region INPUTS CENÁRIOS ////////////////////////////////////////////////////////////////////////////////////////////// */
+input.local {
+    margin-left: 10px;
+    margin-right: 20px;
+    height: 25px;
+    width: 460px;
 }
 
+select.horario {
+    margin-left: 10px;
+    height: 30px;
+    width: 200px;
+}
 
-.save {
+select.regiao {
+    margin-left: 10px;
+    margin-right: 20px;
+    height: 30px;
+    width: 200px;
+}
+
+select.civilizacao {
+    margin-left: 10px;
+    height: 30px;
+    width: 200px;
+}
+
+input.clima {
+    margin-left: 10px;
+    height: 25px;
+    width: 774px;
+}
+
+input.vegetacao {
+    margin-left: 10px;
+    height: 25px;
+    width: 726px;
+}
+
+input.fauna {
+    margin-left: 10px;
+    height: 25px;
+    width: 772px;
+}
+
+input.terreno {
+    margin-left: 10px;
+    height: 25px;
+    width: 757px;
+}
+
+textarea.composicao {
+    margin-left: 10px;
+    height: 100px;
+    width: 713px;
+}
+
+textarea.estruturas {
+    margin-left: 10px;
+    height: 100px;
+    width: 730px;
+}
+/* #endregion */
+
+/* #region Botões salvar //////////////////////////////////////////////////////////////////////////////////////////////// */
+div.save {
     display: flex;
     justify-content: center;
 }
@@ -148,7 +238,9 @@ button.saveprint:active {
     display: flex;
     justify-content: center;
 }
+/* #endregion */
 
+/* #region Botão voltar ///////////////////////////////////////////////////////////////////////////////////////////////// */
 button.buttonback {
     margin: 10px;
     color: rgb(0, 0, 0);
@@ -174,3 +266,4 @@ button.buttonback:active {
     transform: translateY(5px);
     box-shadow: 0px 0px 0px 0px #b65858;
 }
+/* #endregion */
