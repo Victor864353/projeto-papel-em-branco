@@ -12,34 +12,31 @@ div.info {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -25px;
+    margin-top: 0px;
+    margin-bottom: 7px;
 }
 
 div.info2 {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-div.info3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 6px;
+    margin-bottom: 7px;
 }
 
 div.bioma {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -24px;
+    margin-top: 0px;
+    margin-bottom: 7px;
 }
 
 p {
-    display: inline;
     text-align: center;
     background-color: rgb(253, 178, 15);
     color: black;
+    margin-top: 0;
+    margin-bottom: 0;
     padding-left: 5px;
     padding-right: 5px;
     border-radius: 5px;
@@ -47,158 +44,194 @@ p {
     font-weight: 900;
 }
 
-p.bioma {
-    margin-top: 40px;
-}
-
-
 input {
     border-radius: 5px;
     border: none;
     outline: none;
     font-size: 15px;
+    margin-left: 10px;
+    height: 25px;
 }
 
 select {
     border-radius: 5px;
+    border: none;
     font-size: 15px;
     outline: none;
+    height: 30px;
+    margin-left: 10px;
 }
 
 textarea {
     outline: none;
     font-size: 15px;
+    border: none;
     border-radius: 10px;
     resize: none;
+    margin-left: 10px;
 }
 
 /* #region INPUTS PERSONAGEM //////////////////////////////////////////////////////////////////////////////////////////// */
-input.nome {
-    margin-left: 10px;
+input.nome, .raca {
     margin-right: 20px;
-    height: 25px;
-    width: 515px;
+}
+
+input.nome {
+    width: 523px;
 }
 
 input.idade {
-    margin-left: 10px;
-    height: 25px;
     width: 150px;
     text-align: center;
 }
 
 input.raca {
-    margin-left: 10px;
-    margin-right: 20px;
-    height: 25px;
     width: 250px;
 }
 
 input.classe {
-    margin-left: 10px;
-    height: 25px;
     width: 250px;
 }
 
 input.trabalho {
-    margin-left: 10px;
-    height: 25px;
     width: 250px;
 }
 
 select.social {
-    margin-left: 10px;
     margin-right: 20px;
-    height: 30px;
     width: 200px;
 }
 
 textarea.historia {
-    margin-left: 10px;
     height: 100px;
-    width: 750px;
+    width: 755px;
 }
 
 textarea.armas {
-    margin-left: 10px;
     height: 70px;
-    width: 688px;
+    width: 693px;
 }
 
 textarea.aparencia {
-    margin-left: 10px;
     height: 90px;
-    width: 695px;
+    width: 699px;
 }
 
 textarea.habilidades {
-    margin-left: 10px;
     height: 90px;
-    width: 722px;
+    width: 723px;
 }
 /* #endregion */
 
 /* #region INPUTS CENÁRIOS ////////////////////////////////////////////////////////////////////////////////////////////// */
 input.local {
-    margin-left: 10px;
     margin-right: 20px;
-    height: 25px;
-    width: 460px;
+    width: 462px;
 }
 
 select.horario {
-    margin-left: 10px;
-    height: 30px;
     width: 200px;
 }
 
 select.regiao {
-    margin-left: 10px;
     margin-right: 20px;
-    height: 30px;
     width: 200px;
 }
 
 select.civilizacao {
-    margin-left: 10px;
-    height: 30px;
     width: 200px;
 }
 
 input.clima {
-    margin-left: 10px;
-    height: 25px;
-    width: 774px;
+    width: 779px;
 }
 
 input.vegetacao {
-    margin-left: 10px;
-    height: 25px;
-    width: 726px;
+    width: 729px;
 }
 
 input.fauna {
-    margin-left: 10px;
-    height: 25px;
-    width: 772px;
+    width: 775px;
 }
 
 input.terreno {
-    margin-left: 10px;
-    height: 25px;
-    width: 757px;
+    width: 758px;
 }
 
 textarea.composicao {
-    margin-left: 10px;
     height: 100px;
-    width: 713px;
+    width: 712px;
 }
 
 textarea.estruturas {
-    margin-left: 10px;
     height: 100px;
-    width: 730px;
+    width: 729px;
+}
+/* #endregion */
+
+/* #region INPUTS CRIATURAS ///////////////////////////////////////////////////////////////////////////////////////////// */
+input.nomecriatura {
+    margin-right: 20px;
+    width: 477px;
+}
+
+select.movimentacao, .inteligencia, .perigo, .domesticavel {
+    margin-right: 20px;
+}
+
+select.idadecriatura {
+    width: 200px;
+}
+
+select.movimentacao {
+    width: 123px;
+}
+
+select.inteligencia {
+    width: 133px;
+}
+
+select.origem {
+    width: 160px;
+}
+
+select.perigo {
+    width: 200px;
+}
+
+select.alimentacao {
+    width: 160px;
+}
+
+select.domesticavel {
+    width: 163px;
+}
+
+select.grupo {
+    width: 163px;
+}
+
+input.habitat {
+    width: 762px;
+}
+
+textarea.habitos {
+    height: 100px;
+    width: 674px;
+}
+
+textarea.aparenciacriatura {
+    height: 100px;
+    width: 733px;
+}
+
+textarea.habilidadescriatura {
+    height: 100px;
+    width: 725px;
+}
+
+input.uso {
+    width: 797px;
 }
 /* #endregion */
 
