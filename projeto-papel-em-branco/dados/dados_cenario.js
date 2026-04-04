@@ -1,6 +1,6 @@
 const dados_cenario = {
-    local: ["Praia", "Oceano", "Caverna", "Deserto", "Ilha", "Montanhas", "Floresta", "Rio", "Cidade", "Vila", "Fotaleza", "Zona de gerra", "Zona tóxica/radioativa", "Praça", "Feira", "Mercado negro", "Jardim", "Campo de flores", "Caichoeira", "Planícies", "Outro planeta", "Espaço"],
-    clima: ["Quente", "Frio", "Nublado", "Chuvoso", "Tempestade", "Enevoado", "Nevado"],
+    local: ["Praia", "Oceano", "Caverna", "Deserto", "Ilha", "Montanhas", "Floresta", "Rio", "Cidade", "Vila", "Fotaleza", "Zona de gerra", "Zona tóxica/radioativa", "Praça", "Feira", "Mercado negro", "Jardim", "Campo de flores", "Caichoeira", "Planícies", "Outro planeta", "Espaço", "Mina subterrânea", "Templo", "Dungeon", "Ponte", "Rio congelado", "Mar congelado", "Laboratório", "Área militar", "Cemitério", "Fazenda", "Céu", "Inferno", "Vulcão", "Castelo", "Casa", "Quarto", "Prisão"],
+    clima: ["Quente", "Frio", "Nublado", "Chuvoso", "Tempestade", "Enevoado", "Nevado", "Nevasca"],
     horario: ["Dia", "Noite", "Meio-dia", "Nascer do sol", "Por do sol"],
     visao: ["Perspectiva aérea", "Isométrica", "Perspectiva de baixo", "Olho de peixe", "Perspectiva humana"],
     vegetacao: ["Vegetação rasteira", "Pouca vegetação", "Vegetação densa", "Vegetação alienígena", "Árvores gigantes", "Fungos", "Vegetação morta", "Vegetação elementar"],
