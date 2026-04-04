@@ -13,7 +13,7 @@ A ferramenta web é dividida em duas sessões:
 
 **Gerador de Ideias:**
 Permite, através da aleatoriedade, criar ideias completamente novas que fogem do convencional.
-Categorias:
+**Categorias:**
 - **Personagem**
 - **Cenários**
 - **Criaturas**
@@ -22,7 +22,7 @@ Categorias:
 
 **Criação**
 Oferece total liberdade para o usuário escolher e escrever suas ideias.
-Dividido em quatro áreas de criação:
+**Dividido em quatro áreas de criação:**
 - **Personagem:** 
 - **Criatura:** 
 - **Cenário:** 
