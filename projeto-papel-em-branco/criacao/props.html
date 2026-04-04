@@ -5,19 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criação de Props</title>
     <link rel="stylesheet" href="stylecriacao.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 <body>
-    <h1>Props</h1>
-
+    <div id="conteudo-para-salvar">
+        <h1>Props</h1>
+        <div class="info">
+            <p>Nome:</p><input type="text" id="nomeprop" class="nomeprop" placeholder="Ex: Lança do Julgamento">
+            <p>Classificação:</p>
+            <select id="classificacao" class="classificacao">
+                <option>Arma branca</option>
+                <option>Arma de fogo</option>
+                <option>Arma de arremeço</option>
+                <option>Explosivo</option>
+                <option>Armadura</option>
+                <option>Acessório</option>
+                <option>Roupa</option>
+                <option>Objeto</option>
+                <option>Mobília</option>
+                <option>Eletrônico</option>
+                <option>Máquina</option>
+            </select>
+        </div>
+        <div class="info">
+            <p>Origem:</p>
+            <select id="origemprop" class="origemprop">
+                <option>Desconhecida</option>
+                <option>Fabricado</option>
+                <option>Improvisado</option>
+                <option>Invocado/Conjurado</option>
+                <option>Alienígena</option>
+                <option>Tesouro</option>
+            </select>
+        </div>
+        <br>
+        <div class="info2">
+            <p>Função:</p>
+            <textarea id="funcao" class="funcao" placeholder="Ex: combate corpo a corpo de longo alcance"></textarea>
+        </div>
+        <div class="info2">
+            <p>Descrição:</p>
+            <textarea id="descricao" class="descricao" placeholder="Ex: aparência, materiais, texturas, ..."></textarea>
+        </div>
+        <div class="info2">
+            <p>Habilidades:</p>
+            <textarea id="habilidadeprop" class="habilidadeprop" placeholder="(Opicional) Ex: Lealdade: sempre retorna para o dono, ..."></textarea>
+        </div>
+    </div>
     <div class="save">
         <button id="btn-jpeg" class="saveprint">Salvar JPEG</button>
         <button id="btn-pdf" class="saveprint">Salvar PDF</button>
         <button id="btn-txt" class="saveprint">Salvar .txt</button>
     </div>
-
     <div class="back">
         <a href="../index.html"><button class="buttonback">←Voltar</button></a>
     </div>
-
+    <script src="salvamento/salvamento-prop.js"></script>
 </body>
 </html>

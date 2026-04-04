@@ -86,11 +86,11 @@ input.idade {
 }
 
 input.raca {
-    width: 250px;
+    width: 300px;
 }
 
 input.classe {
-    width: 250px;
+    width: 300px;
 }
 
 input.trabalho {
@@ -232,6 +232,28 @@ textarea.habilidadescriatura {
 
 input.uso {
     width: 797px;
+}
+/* #endregion */
+
+/* #region INPUTS PROPS ///////////////////////////////////////////////////////////////////////////////////////////////// */
+input.nomeprop {
+    margin-right: 20px;
+    width: 454px;
+}
+
+textarea.funcao {
+    height: 50px;
+    width: 763px;
+}
+
+textarea.descricao {
+    height: 90px;
+    width: 736px;
+}
+
+textarea.habilidadeprop {
+    height: 90px;
+    width: 719px;
 }
 /* #endregion */
 
