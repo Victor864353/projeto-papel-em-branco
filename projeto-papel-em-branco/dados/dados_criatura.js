@@ -1,14 +1,14 @@
 const dados_criatura = {
     aparencia: ["Fofa", "Tenebrosa", "Assutadora", "Infernal", "Grotesco", "Bonita"],
-    forma: ["Inseto", "Aracnídeo", "Animal terrestre", "Animal voador", "Animal aquático", "Humana/Humanoide", "Alienígena", "Sem forma/Massa viva", "Planta"],
+    forma: ["Inseto", "Aracnídeo", "Animal terrestre", "Animal voador", "Animal aquático", "Humana/Humanoide", "Alienígena", "Sem forma/Massa viva", "Planta", "Robótica"],
     elemento: ["Fogo", "Água", "Terra", "Ar", "Luz", "Trevas", "Raio/Enegia", "Gelo", "Natureza", "Cristal"],
     habitat: ["Terrestre", "Aquático", "Subsolo", "Cavernas", "Biomas gelados", "Biomas vulcânicos", "Céu", "Pântano", "Inferno/Submundo"],
-    origem: ["Reprodução Natural", "Laboratório", "Sobrenatural", "Invocação", "Alienígena", "Mutação"],
+    origem: ["Reprodução Natural", "Laboratório", "Sobrenatural", "Invocado/Conjurado", "Alienígena", "Mutação"],
     movimentacao: ["Bípede", "Quadrúpede", "Voador", "Rastejante", "Flutuante", "Teletransporte"],
     inteligencia: ["Racional", "Irracional", "Super Inteligente"],
     tamanho: ["Muito pequeno", "Pequeno", "Médio", "Tamanho humano", "Muito grande", "Colossal"],
     alimentacao: ["Herbívoro", "Carnívoro", "Onívoro", "Não necessita", "Fotossíntese", "Sangue", "Energia"],
-    uso: ["Montaria/Carregador", "Caça", "Alimentação", "Iguaria", "Chifres", "Nenhum", "Armas"]
+    uso: ["Montaria/Carregador", "Caça", "Alimentação", "Iguaria", "Nenhum", "Criação de armas"]
 };
 
 function sortearIndividual(categoria) {
