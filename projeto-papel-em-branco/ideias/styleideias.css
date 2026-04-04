@@ -6,7 +6,7 @@ body {
 }
 
 button.sorteio {
-    margin: 10px;
+    margin-top: 15px;
     color: rgb(0, 0, 0);
     border: 2px solid;
     outline: none;
@@ -22,7 +22,7 @@ button.sorteio {
 
 button.sorteio:hover {
     background-color: rgb(255, 237, 179);
-    box-shadow: 0px 5px 0px 0px #000000
+    box-shadow: 0px 5px 0px 0px #f7b365
 }
 
 button.sorteio:active{
@@ -31,15 +31,17 @@ button.sorteio:active{
 }
 
 input {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: bold;
     height: 35px;
     border: 2px solid #000000;
     border-radius: 5px;
     background-color: #cfcfcf;
     text-align: center;
+    box-shadow: 0px 4px 0px 0px black;
 }
+
+/* #region Botão de Trava */
 
 label.checkbox {
     display: inline-flex;
@@ -79,12 +81,13 @@ label.checkbox input:checked ~ .fechado {
     display: inline;
 }
 
+/* #endregion */
+
 button.back {
-    margin: 10px;
+    margin-top: 10px;
     color: rgb(0, 0, 0);
-    border: 2px solid;
+    border: 2px solid #000000;
     outline: none;
-    border-color: #000000;
     background-color: rgb(255, 121, 44);
     padding: 5px 10px;
     border-radius: 5px;
@@ -105,7 +108,7 @@ button.back:active {
     box-shadow: 0px 0px 0px 0px #b65858;
 }
 
-button.all {
+button.sorteartudo {
     margin: 10px;
     color: rgb(0, 0, 0);
     border: 2px solid;
@@ -120,13 +123,13 @@ button.all {
     box-shadow: 0px 5px 0px 0px #024369;
 }
 
-button.all:hover {
+button.sorteartudo:hover {
     transform: translateY(-5px);
     background-color: rgb(81, 181, 221);
     box-shadow: 0px 10px 0px 0px #1159c5;
 }
 
-button.all:active {
+button.sorteartudo:active {
     transform: translateY(5px);
     box-shadow: 0px 0px 0px 0px #ffffff;
 }

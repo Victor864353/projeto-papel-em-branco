@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styleideias.css">
 </head>
 <body>
-    <h1>Criaturas</h1>
+    <h1>Criatura</h1>
     <button class="sorteio" onclick="sortearIndividual('aparencia')">Aparência</button> <input type="text" id="aparencia" readonly>
     <label class="checkbox">
         <input type="checkbox" id="trava-aparencia" title="Travar">
@@ -50,6 +50,13 @@
         <img src="cadeadofechado.png" width="20px" class="fechado"> 
     </label>
     <br>
+    <button class="sorteio" onclick="sortearIndividual('inteligencia')">Inteligência</button> <input type="text" id="inteligencia" readonly>
+    <label class="checkbox">
+        <input type="checkbox" id="trava-inteligencia" title="Travar">
+        <img src="cadeadoaberto.png" width="20px" class="aberto">
+        <img src="cadeadofechado.png" width="20px" class="fechado"> 
+    </label>
+    <br>
     <button class="sorteio" onclick="sortearIndividual('tamanho')">Tamanho</button> <input type="text" id="tamanho" readonly>
     <label class="checkbox">
         <input type="checkbox" id="trava-tamanho" title="Travar">
@@ -72,7 +79,7 @@
     </label>
     <br>
     
-    <button class="all" onclick="sortearTudo()">Sortear Tudo</button>
+    <button class="sorteartudo" onclick="sortearTudo()">Sortear Tudo</button>
     <br>
     <a href="../index.html"><button class="back">←Voltar</button></a>
     
