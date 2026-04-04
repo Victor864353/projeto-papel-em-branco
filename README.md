@@ -25,10 +25,10 @@ Categorias:
 Oferece total liberdade para o usuário escolher e escrever suas ideias.
 
 Dividido em quatro áreas de criação:
-- **Personagem:** 
-- **Criatura:** 
-- **Cenário:** 
-- **Props:** 
+- **Personagem** 
+- **Criatura** 
+- **Cenário** 
+- **Props** 
 
 ## 💾 Como salvar o conteúdo
 
